@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            /* background-color: aquamarine; */
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            animation-name: demo;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes demo{
+            from{
+                background-color: blue;
+                border: 3px solid green;
+            }
+
+            to{
+                background-color: yellow;
+                border: 7px solid blue;
+            }
+        }
+
+
+        .box1{
+            animation-name: demo1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes demo1{
+            0%{
+                border: 5px solid green;
+            }
+            50%{
+                border: 10px dashed blue;
+            }
+
+            100%{
+                border: 5px double brown;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box">
+
+    </div>
+
+    <div class="box1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos esse eveniet reprehenderit earum ea eaque ullam veritatis minus, eum necessitatibus nobis ipsam dolorem sunt perferendis explicabo beatae, eligendi, excepturi nisi?
+    </div>
+
+</body>
+</html>

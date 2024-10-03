@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .img1{
+            width: 200px;
+            transition: transform 1s ;
+            position: relative;
+            animation-name: ball;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+         
+        }
+
+        .img2{
+            width: 150px;
+            position: relative;
+            animation-name: spider;
+            animation-duration: 4s;
+            
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes ball{
+            0%{
+                left: 0px;
+                top: 0px;
+                
+            }
+            25%{
+                left: 800px;
+                top: 0px;
+                transform: rotate(180deg);
+                
+            }
+            50%{
+                left: 800px;
+                top: 600px;
+                transform: rotate(180deg);
+            }
+            75%{
+                left: 0px;
+                top: 600px;
+                transform: rotate(90deg);
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+                
+            }
+        }
+
+        @keyframes spider{
+            0%{
+                left: 0px;
+                top: 0px;
+                
+            }
+            25%{
+                left: 800px;
+                top: 0px;
+                transform: rotate(360deg);
+                
+            }
+            50%{
+                left: 800px;
+                top: 600px;
+                transform: rotate(180deg);
+            }
+            75%{
+                left: 0px;
+                top: 600px;
+                transform: rotate(90deg);
+            }
+            100%{
+                left: 0px;
+                top: 0px;
+                
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <img src="./media/pinpng.com-slender-man-png-1137.png" alt="" class="img2">
+
+    <img src="./media/Ball PNG Images (Transparent HD Photo Clipart).jpg" alt="" class="img1">
+
+   
+
+</body>
+</html>

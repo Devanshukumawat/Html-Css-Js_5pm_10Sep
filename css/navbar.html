@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <style>
+        .navbar ul li{
+            display: inline;
+        }
+        .navbar{
+            background-color: orange;
+            padding: 10px;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar ul li a:hover{
+            border: 1px solid white;
+            padding: 4px;
+        }
+
+        .navbar ul li{
+            margin: 5px;
+        }
+
+        .navbar form{
+            float: right;
+        }
+
+        #all{
+            background-color: green;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        #search{
+            padding: 4px;
+            border: 2px solid green;
+            /* outline: 2px solid red; */
+            border-top-left-radius: 10px;
+            outline: none;
+            background-color: green;
+            
+           
+        }
+
+        #search::placeholder{
+            color: white;
+        }
+
+        #btn{
+            background-color: green;
+            border: none;
+            padding: 6px;
+            border-bottom-right-radius: 10px;
+            color: white;
+        }
+
+        #select{
+            background-color: green;
+            border-top-left-radius: 10px;
+            border: none;
+            outline: none;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+
+    <div class="navbar">
+
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Services <span class="material-symbols-outlined">
+                search
+                </span></a></li>
+            <li><a href="">Query</a></li>
+            <li>
+                <form action="">
+                    <div id="all">
+                        <select name="" id="select">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                        <input type="search" name="" id="search" placeholder="search here...">
+                    <input type="submit" value="Search" id="btn">
+                    </div>
+                    
+                </form>
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+</html>
